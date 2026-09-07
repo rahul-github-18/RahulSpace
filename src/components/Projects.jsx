@@ -31,7 +31,7 @@ export default function Projects() {
       ],
       tech: ['Java', 'Spring Boot', 'JSP', 'PostgreSQL', 'AI Chatbot', 'Email API'],
       githubUrl: 'https://github.com/rahul-github-18',
-      liveUrl: 'https://talenttrack.up.railway.app'
+      liveUrl: 'https://talenttrack-s5hk.onrender.com'
     },
     {
       id: 'sorting-visualizer',

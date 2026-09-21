@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
 
       <p className="hero-bio">
-       Software Developer with 6+ months of hands-on industry experience delivering 20+ REST APIs and business modules using Java, Spring Boot, PHP , and MySQL/PostgreSQL across production applications. Advanced from an internship to a full-time development role within a year, building a strong foundation in Data Structures & Algorithms, OOP , and database design. Owns tasks end-to-end and collaborates closely with cross-functional Agile
+       Software Developer with hands-on industry experience delivering REST APIs and business modules using Java, Spring Boot, PHP , and MySQL/PostgreSQL across production applications. Having strong foundation in Data Structures & Algorithms, OOP , and database design. Owns tasks end-to-end and collaborates closely with cross-functional Agile
       teams to ship reliable, maintainable code.
       </p>
 

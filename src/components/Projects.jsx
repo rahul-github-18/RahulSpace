@@ -29,7 +29,7 @@ export default function Projects() {
 
     {
       id: 'threads',
-      title: 'Threads – Social Media Platform',
+      title: 'Trending – Social Media Platform',
       category: 'React / Spring Boot / PostgreSQL',
       bullets: [ 
         'Full-stack social media platform built with React, Spring Boot, and PostgreSQL', 
@@ -46,7 +46,7 @@ export default function Projects() {
         'PostgreSQL'
       ],
       githubUrl: 'https://github.com/rahul-github-18/Trending',
-      liveUrl: 'trendingthread.vercel.app'
+      liveUrl: 'https://trendingthread.vercel.app'
     },
 
     {

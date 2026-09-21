@@ -9,7 +9,7 @@ export default function Skills() {
     },
     {
       category: 'Frontend',
-      skills: 'React • JavaScript • HTML5 • CSS3 • Next.js'
+      skills: 'React • JavaScript • HTML5 • CSS3'
     },
     {
       category: 'Database',
@@ -17,7 +17,7 @@ export default function Skills() {
     },
     {
       category: 'Languages',
-      skills: 'Java • Python • PHP • SQL • JavaScript'
+      skills: 'Java • PHP • SQL • JavaScript'
     },
     {
       category: 'Tools',
@@ -25,7 +25,7 @@ export default function Skills() {
     },
     {
       category: 'Core Concepts',
-      skills: 'DSA • OOP • DBMS • Computer Networks • Agile'
+      skills: 'Data Structures  • OOP • DBMS • Computer Networks • Agile'
     }
   ];
 

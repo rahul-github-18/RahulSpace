@@ -8,60 +8,98 @@ export default function Projects() {
     {
       id: 'codediary',
       title: 'CodeDiary – Developer Workspace & Learning Platform',
-      category: 'Next.js 14 / Supabase',
-      bullets: [
-        'Monaco Editor Integration',
-        'Progress Tracking Dashboard',
-        'PDF & Excel Export',
-        'Email Notification System'
+      category: 'Next.js / Supabase / PWA',
+    bullets: [
+      'All-in-one developer workspace for DSA practice, technical notes, code snippets, and interview preparation',
+      '500+ coding interview questions across 100+ programming topics with structured solutions and complexity analysis', 
+      'Integrated code editor and code-sharing workspace for writing, executing, and sharing programming solutions', 
+      'Progress analytics with streaks, daily activity, learning milestones, and completed-topic tracking'
+    ],
+      tech: [
+        'Next.js',
+        'React',
+        'TypeScript',
+        'Supabase',
+        'Monaco Editor',
+        'PWA'
       ],
-      tech: ['Next.js 14', 'React 18', 'Supabase', 'Monaco Editor', 'Axios', 'jsPDF', 'SheetJS'],
       githubUrl: 'https://github.com/rahul-github-18',
       liveUrl: 'https://kodediary.vercel.app'
     },
+
+    {
+      id: 'threads',
+      title: 'Threads – Social Media Platform',
+      category: 'React / Spring Boot / PostgreSQL',
+      bullets: [ 
+        'Full-stack social media platform built with React, Spring Boot, and PostgreSQL', 
+        'Secure JWT authentication and authorization using Spring Security', 
+        'Create, edit, delete, like, and manage threads through RESTful APIs',
+        'User profiles with follow / unfollow relationships and follower management'
+      ],
+      tech: [
+        'React',
+        'TypeScript',
+        'Spring Boot',
+        'Spring Security',
+        'JWT',
+        'PostgreSQL'
+      ],
+      githubUrl: 'https://github.com/rahul-github-18/Trending',
+      liveUrl: 'trendingthread.vercel.app'
+    },
+
     {
       id: 'talenttrack',
       title: 'TalentTrack – Job Discovery & Management Platform',
       category: 'Java / Spring Boot / PostgreSQL',
-      bullets: [
-        'Candidate & Application Dashboard',
-        'AI Chatbot Assistant',
-        'Multi-Role Authentication',
-        'Automated Email Alerts'
+     bullets: [ 
+       'Full-stack job discovery platform for browsing and managing job opportunities', 
+       'Candidate dashboard for tracking job applications and application status',
+       'Multi-role authentication and authorization for different user types', 
+       'Scalable RESTful backend with Spring Boot, Hibernate ORM, and PostgreSQL for reliable data management'
+     ],
+      tech: [
+        'Java',
+        'Spring Boot',
+        'Hibernate',
+        'Spring Security',
+        'JWT Authentication',
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'PostgreSQL',
+        'REST API'
       ],
-      tech: ['Java', 'Spring Boot', 'JSP', 'PostgreSQL', 'AI Chatbot', 'Email API'],
       githubUrl: 'https://github.com/rahul-github-18',
-      liveUrl: 'https://talenttrack-s5hk.onrender.com'
-    },
-    {
-      id: 'sorting-visualizer',
-      title: 'Sorting Visualizer and Algorithm Analyzer',
-      category: 'Java / Multithreading / GUI',
-      bullets: [
-        '300+ Array Algorithm Animations',
-        'Multithreaded Frame Optimization',
-        'Speed & Array Controls',
-        'Modular Swing & AWT Architecture'
-      ],
-      tech: ['Java', 'Swing', 'AWT', 'Multithreading', 'Algorithms'],
-      githubUrl: 'https://github.com/rahul-github-18',
-      liveUrl: '' // NO Live Demo button for Sorting Visualizer
+      liveUrl: 'https://attalenttrack.onrender.com'
     }
   ];
 
   return (
     <section id="projects" className="projects-section">
       <div className="section-header">
+        <span className="section-eyebrow">Featured Work</span>
         <h2 className="section-title">Projects</h2>
+        <p className="section-description">
+          A selection of applications I have designed and developed across
+          frontend, backend, databases, and full-stack systems.
+        </p>
       </div>
 
       <div className="projects-list">
         {projects.map((proj) => (
-          <div key={proj.id} className="clean-card proj-card">
+          <article key={proj.id} className="clean-card proj-card">
+
             <div className="proj-top-header">
-              <div>
-                <span className="proj-cat-tag">{proj.category}</span>
-                <h3 className="proj-card-title">{proj.title}</h3>
+              <div className="proj-heading">
+                <span className="proj-cat-tag">
+                  {proj.category}
+                </span>
+
+                <h3 className="proj-card-title">
+                  {proj.title}
+                </h3>
               </div>
 
               <div className="proj-actions">
@@ -69,7 +107,7 @@ export default function Projects() {
                   <a
                     href={proj.githubUrl}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="proj-btn secondary-btn"
                   >
                     <GithubIcon size={13} />
@@ -77,35 +115,41 @@ export default function Projects() {
                   </a>
                 )}
 
-                {proj.liveUrl ? (
+                {proj.liveUrl && (
                   <a
                     href={proj.liveUrl}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="proj-btn primary-btn"
                   >
                     <Globe size={13} />
                     <span>Live Demo</span>
                     <ArrowUpRight size={12} />
                   </a>
-                ) : null}
+                )}
               </div>
             </div>
 
             <ul className="proj-short-features">
-              {proj.bullets.map((b, bIdx) => (
-                <li key={bIdx}>{b}</li>
+              {proj.bullets.map((bullet, index) => (
+                <li key={index}>
+                  {bullet}
+                </li>
               ))}
             </ul>
 
             <div className="proj-tech-row">
-              {proj.tech.map((t, tIdx) => (
-                <span key={tIdx} className="tech-badge">
-                  {t}
+              {proj.tech.map((technology, index) => (
+                <span
+                  key={index}
+                  className="tech-badge"
+                >
+                  {technology}
                 </span>
               ))}
             </div>
-          </div>
+
+          </article>
         ))}
       </div>
     </section>

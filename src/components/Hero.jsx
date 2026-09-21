@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Mail, ArrowUpRight, FileText, Download } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
-import resumePdf from '../assets/Rahul Ranjan - Resume.pdf';
+import resumePdf from '../assets/Rahul_Ranjan Resume.pdf';
 import './Hero.css';
 
 export default function Hero() {

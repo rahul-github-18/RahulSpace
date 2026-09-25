@@ -28,26 +28,29 @@ export default function Projects() {
     },
 
     {
-      id: 'threads',
-      title: 'Trending – Social Media Platform',
-      category: 'React / Spring Boot / PostgreSQL',
-      bullets: [ 
-        'Full-stack social media platform built with React, Spring Boot, and PostgreSQL', 
-        'Secure JWT authentication and authorization using Spring Security', 
-        'Create, edit, delete, like, and manage threads through RESTful APIs',
-        'User profiles with follow / unfollow relationships and follower management'
-      ],
-      tech: [
-        'React',
-        'TypeScript',
-        'Spring Boot',
-        'Spring Security',
-        'JWT',
-        'PostgreSQL'
-      ],
-      githubUrl: 'https://github.com/rahul-github-18/Trending',
-      liveUrl: 'https://trendingthread.vercel.app'
-    },
+  id: 'threads',
+  title: 'Trending – Social Media Platform',
+  category: 'React / Spring Boot / PostgreSQL / S3 Object Storage',
+  bullets: [
+    'Full-stack social media platform built with React, Spring Boot, and PostgreSQL',
+    'Secure JWT authentication and authorization using Spring Security',
+    'Create, edit, delete, like, and manage threads through RESTful APIs',
+    'User profiles with follow / unfollow relationships and follower management',
+    'Integrated S3-compatible object storage through Neon for profile image storage'
+  ],
+  tech: [
+    'React',
+    'TypeScript',
+    'Spring Boot',
+    'Spring Security',
+    'JWT',
+    'PostgreSQL',
+    'S3 Object Storage',
+    'Neon'
+  ],
+  githubUrl: 'https://github.com/rahul-github-18/Trending',
+  liveUrl: 'https://trendingthread.vercel.app'
+},
 
     {
       id: 'talenttrack',
